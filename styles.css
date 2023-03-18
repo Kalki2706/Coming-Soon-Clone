@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-image: url(https://images.unsplash.com/photo-1440964829947-ca3277bd37f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Zm9yZXN0JTIwYnJpZGdlfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+@-moz-document url-prefix() {
+  /* Disable scrollbar Firefox */
+  html {
+    scrollbar-width: none;
+  }
+}
+body {
+  margin: 0; /* remove default margin */
+  scrollbar-width: none; /* Also needed to disable scrollbar Firefox */
+  -ms-overflow-style: none; /* Disable scrollbar IE 10+ */
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* Disable scrollbar Chrome/Safari/Webkit */
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(https://fonts.gstatic.com/s/raleway/v28/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrE.woff2);
+}
+
+.logo,
+.heading,
+.footer,
+.link,
+.line,
+.para {
+  font-family: "Raleway";
+  color: rgb(255, 255, 255);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 16px 24px;
+}
+
+.main {
+  text-align: center;
+}
+
+.heading {
+  font-weight: 400;
+  margin-top: 38.1vh;
+  font-size: 64px;
+}
+
+.line {
+  width: 184px;
+  margin: 20px 870px;
+  height: 0.7px;
+  border: none;
+  background-color: rgb(156, 156, 156);
+}
+
+.para {
+  margin: 21px;
+  font-size: 18px;
+}
+
+.sec_para {
+  margin: 376px 0px 0px 24px;
+  font-size: 15px;
+}
