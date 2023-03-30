@@ -1,7 +1,7 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
-}
+} */
 
 html {
   background-image: url(https://images.unsplash.com/photo-1440964829947-ca3277bd37f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Zm9yZXN0JTIwYnJpZGdlfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
@@ -9,6 +9,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+  /* overflow: hidden; */
 }
 
 @-moz-document url-prefix() {
@@ -17,6 +18,7 @@ html {
     scrollbar-width: none;
   }
 }
+
 body {
   margin: 0; /* remove default margin */
   scrollbar-width: none; /* Also needed to disable scrollbar Firefox */
@@ -58,12 +60,14 @@ body::-webkit-scrollbar {
   font-weight: 400;
   margin-top: 38.1vh;
   font-size: 64px;
+  margin-bottom: 20px;
 }
 
 .line {
-  width: 184px;
-  margin: 20px 870px;
-  height: 0.7px;
+  /* display: block; */
+  /* width: 182px; */
+  margin: 0 870px;
+  height: 0.8px;
   border: none;
   background-color: rgb(156, 156, 156);
 }
@@ -74,6 +78,6 @@ body::-webkit-scrollbar {
 }
 
 .sec_para {
-  margin: 376px 0px 0px 24px;
+  margin: 353px 0px 0px 24px;
   font-size: 15px;
 }
