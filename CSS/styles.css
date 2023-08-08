@@ -91,7 +91,7 @@ a:active {
   }
 }
 
-/* MEDIA QUERY FOR MIN-SCREEN SIZE: 600px */
+/* MEDIA QUERY FOR MIN-SCREEN SIZE: 1200px */
 @media only screen and (min-width: 1200px) {
   main .heading {
     font-size: 3.2rem;
