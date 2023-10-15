@@ -1,19 +1,17 @@
 * {
   font-family: 'Raleway', sans-serif;
+  color: #fff;
 }
 
 body {
   margin: 0;
-  background: url(https://images.unsplash.com/photo-1440964829947-ca3277bd37f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Zm9yZXN0JTIwYnJpZGdlfGVufDB8fDB8fA%3D%3D&w=1000&q=80);
-  background-position: center;
-  background-repeat: no-repeat;
+  background: center
+    url(https://images.unsplash.com/photo-1440964829947-ca3277bd37f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Zm9yZXN0JTIwYnJpZGdlfGVufDB8fDB8fA%3D%3D&w=1000&q=80)
+    no-repeat fixed;
   background-size: cover;
-  background-attachment: fixed;
-  color: #fff;
 }
 
-/* WRAPPER SECTION */
-.wrapper {
+.container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -21,23 +19,26 @@ body {
   padding: 0 0.5em;
 }
 
-header,
-footer {
+.pad-left {
   padding-left: 1em;
 }
 
-/* MAIN SECTION */
+.logo {
+  font-size: clamp(1.1rem, 3.5vw, 1.5rem);
+}
+
 main {
   margin: 0 auto;
   text-align: center;
 }
 
-main .heading {
-  font-size: 2rem;
+.heading {
+  font-size: clamp(2rem, 7vw, 3.5rem);
+  font-weight: 400;
   margin-bottom: 0.3em;
 }
 
-main .line {
+.line {
   border: none;
   height: 0.0625em;
   width: 50%;
@@ -45,17 +46,16 @@ main .line {
   background-color: #9c9c9c;
 }
 
-/* FOOTER SECTION */
-footer .link-txt {
-  font-size: 0.9375rem;
+/* DAYS-LEFT AND LINK-TEXT COMBINED CLASS */
+.clamp-font {
+  font-size: clamp(0.9375rem, 2.5vw, 1.125rem);
 }
 
 a {
-  color: #fff;
   transition: color 0.2s;
 }
 
-/* LVHA */
+/* L, V, H, A */
 a:link {
   color: #fff;
 }
@@ -72,31 +72,8 @@ a:active {
   color: #5affac;
 }
 
-/* MEDIA QUERY FOR MIN-SCREEN SIZE: 600px */
-@media only screen and (min-width: 600px) {
-  header .logo {
-    font-size: 1.5rem;
-  }
-
-  main .heading {
-    font-size: 2.8rem;
-  }
-
-  main .days-left {
-    font-size: 1.125rem;
-  }
-
-  footer .link-txt {
-    font-size: 1.125rem;
-  }
-}
-
 /* MEDIA QUERY FOR MIN-SCREEN SIZE: 1200px */
 @media only screen and (min-width: 1200px) {
-  main .heading {
-    font-size: 3.2rem;
-  }
-
   main .line {
     height: 0.1375em;
   }
